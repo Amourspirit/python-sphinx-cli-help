@@ -74,7 +74,7 @@ def _args_comp(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "-s",
         "--search",
-        help="Search pharase. Multiple -s are permitted.",
+        help="Search phrase. Multiple -s are permitted.",
         action="append",
         dest="search",
         required=True,

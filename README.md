@@ -10,7 +10,7 @@ This project converts the `objects.inv` created by [Sphinx Docs](https://www.sph
 
 
 This project is designed as a template.
-Using this template for your own project means you can create and publish CLI package for any Sphinx project with very little configuration and No coding necessary.
+Using this template for your own project means that you can create and publish CLI package for any Sphinx project with very little configuration and No coding necessary.
 
 ## Getting Started
 
@@ -19,6 +19,8 @@ Create your own project by click the `Use this template` on GitHub.
 ### The `pyproject.toml` file
 
 Edit the `pyproject.toml` file and change the following:
+
+See the [Configure](wiki/Configure) in the Wiki for more information
 
 ```toml
 [custom.metadata]
@@ -42,6 +44,7 @@ readme = "README.md"
 The file is found in the `sphinx_cli_help` folder.
 
 There are many configuration options available in the `config.json` file.
+See the [config.json](wiki/config.json) in the Wiki for more information.
 
 To get started just change the `url_prefix` to the URL of your Sphinx project. and the `name` to the name of your project. Keep then name short and simple as it is used in the command line search options.
 
@@ -60,6 +63,8 @@ To get started just change the `url_prefix` to the URL of your Sphinx project. a
 ### Database
 
 Under the hood a SQLite database is used to store the data parsed from `objects.inv` file.
+
+See the [Import](wiki/Import) in the Wiki for more information.
 
 To create the Database for your Sphinx project, run the following command:
 
@@ -123,7 +128,7 @@ Choosing `2` and pressing enter will display the URL and open it in default brow
 https://python-ooo-dev-tools.readthedocs.io/en/latest/src/office/write.html#ooodev.office.write.Write.append_date_time
  ```
 
-Read the Wiki for the rest.
+Read the [Wiki](wiki) for the rest.
 
 ## LICENSE
 
