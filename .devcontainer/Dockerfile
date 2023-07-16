@@ -60,5 +60,5 @@ COPY ./.devcontainer/startup.sh /usr/local/bin/startup.sh
 COPY ./.devcontainer/res/venv/bin/cli-hlp /workspace/sphinx-cli-help/.venv/bin/cli-hlp
 COPY ./.devcontainer/root/bashrc.sh /root/.bashrc
 COPY ./.devcontainer/root/bashrc_custom.sh /root/.bashrc_custom
-RUN chmod +x /workspace/sphinx-cli-help/.venv/bin/cli_hlp \
+RUN chmod +x /workspace/sphinx-cli-help/.venv/bin/cli-hlp \
     && chmod +x "/usr/local/bin/startup.sh"
