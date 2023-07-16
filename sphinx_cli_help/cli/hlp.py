@@ -74,7 +74,7 @@ def _args_comp(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "-s",
         "--search",
-        help="Search pharase. Multiple -s are permitted.",
+        help="Search phrase. Multiple -s are permitted.",
         action="append",
         dest="search",
         required=True,
@@ -147,6 +147,15 @@ def _args_comp(parser: argparse.ArgumentParser) -> None:
             choices=idx_prefix,
             help=f"Optional: Limit search to a specific Help set. {idx_prefix_help}",
         )
+    parser.add_argument(
+        "-e",
+        "--escape",
+        help="Escape Character. Used to escape %% and _ characters in search. The value normally used when needed is \\",
+        action="store",
+        dest="escape",
+        default="",
+        required=False,
+    )
 
 
 # endregion Parser Args
@@ -193,7 +202,7 @@ def _args_hlp_action(args: argparse.Namespace) -> int:
         limit=args.limit,
         case_sensitive=args.case_sensitive,
         help_index=help_index,
-        exlude=args.exclude,
+        exclude=args.exclude,
     )
     if len(results) == 0:
         print("Search produced no results")

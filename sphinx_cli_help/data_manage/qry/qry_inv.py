@@ -55,12 +55,13 @@ class QryInv(BaseSql):
         self,
         search_name: str | List[str],
         *,
-        exlude: str | List[str] = "",
+        exclude: str | List[str] = "",
         domain: str = "",
         role: str = "",
         limit: int = 10,
         case_sensitive: bool = False,
         help_index: int = -1,
+        escape: str = "",
     ) -> List[Inventory]:
         if not search_name:
             return []
@@ -76,13 +77,10 @@ class QryInv(BaseSql):
             args["search_name0"] = search_name.strip()
         result: List[Inventory] = []
 
-        if isinstance(exlude, str):
-            if exlude:
-                excludes = [exlude]
-            else:
-                excludes = []
+        if isinstance(exclude, str):
+            excludes = [exclude] if exclude else []
         else:
-            excludes = exlude
+            excludes = exclude
 
         if domain:
             qry_str += f" AND inventory.domain LIKE :domain"
@@ -109,6 +107,8 @@ class QryInv(BaseSql):
             nots = [f"'{itm}'" for itm in AppConfig.db_not_role]
             nots.insert(0, "")
             qry_str += " AND inventory.role NOT LIKE ".join(nots)
+        if escape:
+            qry_str += f" ESCAPE '{escape[0]}'"
         if limit > 0:
             qry_str += f" LIMIT {limit};"
         # print()
