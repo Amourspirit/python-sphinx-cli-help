@@ -1,0 +1,6 @@
+#!/home/paul/Documents/Projects/Python/LibreOffice/ooo-dev-help/.venv/bin/python
+import sys
+from sphinx_cli_help.cli.hlp import main
+
+if __name__ == '__main__':
+    sys.exit(main())

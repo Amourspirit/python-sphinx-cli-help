@@ -145,3 +145,4 @@ cython_debug/
 
 tmp/
 dist/
+!/.devcontainer/**
