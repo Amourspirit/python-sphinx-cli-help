@@ -57,7 +57,7 @@ RUN MY_PY_VER=$(python -c "import sys; major, minor = sys.version_info[:2]; prin
     && echo "/workspace/sphinx-cli-help" >> "/workspace/sphinx-cli-help/.venv/lib/python$MY_PY_VER/site-packages/sphinx_cli_help.pth"
 
 COPY ./.devcontainer/startup.sh /usr/local/bin/startup.sh
-COPY ./.devcontainer/res/venv/bin/cli-hlp /workspace/sphinx-cli-help/.venv/bin/cli_hlp
+COPY ./.devcontainer/res/venv/bin/cli-hlp /workspace/sphinx-cli-help/.venv/bin/cli-hlp
 COPY ./.devcontainer/root/bashrc.sh /root/.bashrc
 COPY ./.devcontainer/root/bashrc_custom.sh /root/.bashrc_custom
 RUN chmod +x /workspace/sphinx-cli-help/.venv/bin/cli_hlp \
