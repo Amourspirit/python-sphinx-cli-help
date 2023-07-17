@@ -130,6 +130,10 @@ https://python-ooo-dev-tools.readthedocs.io/en/latest/src/office/write.html#oood
 
 Read the [Wiki](https://github.com/Amourspirit/python-sphinx-cli-help/wiki) for the rest.
 
+## Example Project
+
+For an example of a project that uses this template, see [OooDev CLI Help](https://github.com/Amourspirit/python-ooodev-cli-hlp)
+
 ## LICENSE
 
 This project is Licensed under the MIT License.
