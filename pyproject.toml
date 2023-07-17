@@ -46,3 +46,13 @@ extended-select=["ANN", "C4", "N", "SIM", "TCH"]
 ignore=["E502"]
 show-fixes=true
 target="py38"
+
+[[tool.poetry.source]]
+name = "pypi-test"
+url = "https://test.pypi.org/legacy/"
+priority = "supplemental"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
