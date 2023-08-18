@@ -8,7 +8,7 @@
 # After running python -m app build, the normal poetry publish command can be used to publish.
 # Don't forget to include a LICENSE file in the project root directory.
 
-[custom.metadata]
+[tool.template.metadata]
 pkg_out_name = "sphinx_cli_help"
 entry_point_name = "cli-hlp"
 build_dir = "build"

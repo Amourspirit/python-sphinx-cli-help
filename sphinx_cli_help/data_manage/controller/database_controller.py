@@ -1,6 +1,5 @@
 from __future__ import annotations
 from typing import Any
-from ...cfg import AppConfig
 from ..db_class.init_db import InitDb
 from ..db_class.db_connect import DbConnect
 from ..db_class.tbl_sphinx_info import TblSphinxInfo

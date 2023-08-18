@@ -23,7 +23,7 @@ Edit the `pyproject.toml` file and change the following:
 See the [Configure](https://github.com/Amourspirit/python-sphinx-cli-help/wiki/config.json) in the Wiki for more information
 
 ```toml
-[custom.metadata]
+[tool.template.metadata]
 pkg_out_name = "my_custom_help"
 entry_point_name = "my-help"
 build_dir = "build"
