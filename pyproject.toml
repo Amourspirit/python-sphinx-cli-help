@@ -1,8 +1,8 @@
 # Do not use Poetry to build this project directly.
 # Instead use python -m app build
-# The custom.metadata section is used to set the package name and entry point name.
-# python -m app build will use the custom.metadata.pkg_out_name to set the package name
-# and the custom.metadata.entry_point_name to set the entry point name.
+# The tool.template.metadata section is used to set the package name and entry point name.
+# python -m app build will use the tool.template.metadata.pkg_out_name to set the package name
+# and the tool.template.metadata.entry_point_name to set the entry point name.
 # The tool.poetry section otherwise should be modified as needed.
 #
 # After running python -m app build, the normal poetry publish command can be used to publish.
@@ -22,11 +22,11 @@ description = "Command Line Help for my Custom Sphinx Project"
 authors = ["Author Name <author@email.com>"]
 license = "MIT"
 readme = "README.md"
-# Do not change this next line. Instead change the custom.metadata.pkg_out_name
+# Do not change this next line. Instead change the tool.template.metadata.pkg_out_name
 packages = [{include = "sphinx_cli_help"}]
 
 [tool.poetry.scripts]
-#  Don not change this next line. Instead change the custom.metadata.entry_point_name
+#  Do not change this next line. Instead change the tool.template.metadata.entry_point_name
 cli-hlp = "sphinx_cli_help.cli.hlp:main"
 
 [tool.poetry.dependencies]
