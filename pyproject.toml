@@ -17,7 +17,7 @@ build_license=""
 
 [tool.poetry]
 name = "custom-sphinx-help"
-version = "0.1.0"
+version = "0.1.1"
 description = "Command Line Help for my Custom Sphinx Project"
 authors = ["Author Name <author@email.com>"]
 license = "MIT"
