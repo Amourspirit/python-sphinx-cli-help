@@ -1,6 +1,6 @@
 # coding: utf-8
+from __future__ import annotations
 from dataclasses import asdict
-from typing import List
 from .base_sql_table import BaseSqlTable
 from .sql_ctx import SqlCtx
 from ...data_class import SphinxInfo
